@@ -17,7 +17,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -30,15 +30,11 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-          ls -a 
-          java --version
-          node --version
-          dig +short myip.opendns.com @resolver1.opendns.com
-          apache2 -v
-          nginx -v
+        run: cd /var/www/html
+             rm index.html
+             cp _work/index.html /var/www/html
+             systemctl restart apache2
+        
           
       
           
