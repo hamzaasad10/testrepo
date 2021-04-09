@@ -38,6 +38,7 @@ jobs:
           node --version
           dig +short myip.opendns.com @resolver1.opendns.com
           apache2 -v
+          nginx -v
           
       
           
