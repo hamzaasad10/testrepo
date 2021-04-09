@@ -35,6 +35,6 @@ jobs:
           echo test, and deploy your project.
           ls -a 
           java --version
+          node --version
       
-          ifconfig 
-          systemctl status apache2
+          
