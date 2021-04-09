@@ -33,7 +33,7 @@ jobs:
         run: |
              cd /var/www/html
              sudo rm index.html
-             cp index.html /var/www/html
+             git pull
              systemctl restart apache2
         
           
