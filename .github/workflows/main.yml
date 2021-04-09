@@ -37,7 +37,7 @@ jobs:
           java --version
           node --version
           dig +short myip.opendns.com @resolver1.opendns.com
-          systemctl status httpd
+          systemctl status apache2
           
       
           
