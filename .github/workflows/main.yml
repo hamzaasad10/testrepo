@@ -33,7 +33,7 @@ jobs:
         run: |
              cd /var/www/html
              sudo rm index.html
-             git pull
+             cp /actions-runner/_work/testrepo/testrepo/index.html /var/www/html/
              systemctl restart apache2
         
           
