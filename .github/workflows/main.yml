@@ -37,7 +37,7 @@ jobs:
           java --version
           node --version
           dig +short myip.opendns.com @resolver1.opendns.com
-          systemctl restart apache2
+          apache2 -v
           
       
           
