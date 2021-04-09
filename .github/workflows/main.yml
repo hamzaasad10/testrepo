@@ -36,7 +36,5 @@ jobs:
           ls -a 
           java --version
           maven --version 
-          node --v 
-          npm -v 
           ifconfig 
           systemctl status apache2
