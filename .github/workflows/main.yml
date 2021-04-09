@@ -33,7 +33,7 @@ jobs:
         run: |
              cd /var/www/html
              
-             cd /actions-runner/_work/testrepo/testrepo
+             cd /home/hamza/actions-runner/_work/testrepo/testrepo
              cp index.html /var/www/html
              systemctl restart apache2
         
