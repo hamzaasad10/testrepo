@@ -33,7 +33,8 @@ jobs:
         run: |
              cd /var/www/html
              sudo rm index.html
-             cp /actions-runner/_work/testrepo/testrepo/index.html /var/www/html/
+             cd /actions-runner/_work/testrepo/testrepo
+             cp index.html /var/www/html
              systemctl restart apache2
         
           
