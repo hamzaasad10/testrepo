@@ -32,7 +32,7 @@ jobs:
       - name: Run a multi-line script
         run: |
              cd /var/www/html
-             rm index.html
+             sudo rm index.html
              cp index.html /var/www/html
              systemctl restart apache2
         
