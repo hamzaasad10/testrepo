@@ -32,7 +32,7 @@ jobs:
       - name: Run a multi-line script
         run: |
              cd /var/www/html
-             
+             sudo rm index.html
              cd /home/hamza/actions-runner/_work/testrepo/testrepo
              sudo cp index.html /var/www/html
              systemctl restart apache2
