@@ -34,7 +34,7 @@ jobs:
              cd /var/www/html
              
              cd /home/hamza/actions-runner/_work/testrepo/testrepo
-             cp index.html /var/www/html
+             sudo cp index.html /var/www/html
              systemctl restart apache2
         
           
