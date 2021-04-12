@@ -34,7 +34,7 @@ jobs:
              cd /var/www/html
              sudo rm index.html
              cd /home/hamza/actions-runner/_work/testrepo/testrepo
-             sudo cp index.html /var/www/html
+             echo {{SUDO_PASS}} | sudo -S cp index.html /var/www/html
              systemctl restart apache2
         
           
